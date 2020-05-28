@@ -4,6 +4,8 @@
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/rocketseat/react-native-template-rocketseat-advanced.svg)](https://github.com/k2madureira/Hc_electron/commits/master)
 [![NPM](https://img.shields.io/npm/l/react-native-template-rocketseat-advanced.svg)](https://choosealicense.com/licenses/mit)
+[![Coverage Status](https://codecov.io/gh/electron/electron-packager/branch/master/graph/badge.svg)](https://codecov.io/gh/electron/electron-packager)
+[![NPM](https://badgen.net/npm/v/electron-packager)](https://npm.im/electron-packager)
 
 <img src="https://user-images.githubusercontent.com/26586585/83173228-177e4300-a0ef-11ea-8b01-4bc65d819d27.PNG" data-canonical-src="https://user-images.githubusercontent.com/26586585/83173228-177e4300-a0ef-11ea-8b01-4bc65d819d27.PNG" width="800" height="400"/>
 
