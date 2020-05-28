@@ -1,15 +1,28 @@
 {
   "name": "HorusC",
   "version": "1.0.0",
-  "description": "",
+  "description": "Horusc",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . --platform=win32 --arch=ia32",
+    "build-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=packages",
+    "build-win": "electron-packager . horusC --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=packages --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"HorusC\"",    
+    "build-linux": "electron-packager . horusC --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=packages"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "electron": "^9.0.0"
+  "keywords": [
+    "Electron",
+    "Horusc"
+  ],
+  "author": "Lenilson",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "electron-builder": "^22.7.0",
+    "electron-packager": "^14.2.1"
+  },
+  "build": {
+    "appId": "horusc",
+    "productName": "HorusC"
   }
 }

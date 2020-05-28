@@ -1,21 +1,20 @@
 const { app, BrowserWindow, globalShortcut } = require('electron')
 const config = require('./config');
 
-process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
+//process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 
 let win;
 
 function createWindow () {
   // Cria uma janela de navegação.
-    win = new BrowserWindow({
-    title: 'Horus C19',
+   const win = new BrowserWindow({
+    title: 'HorusC',
     width: 1200,
     height: 600,
     minWidth: 800,
     minHeight: 600,
     center: true,
     backgroundColor: '#001147',
-    icon: 'icons/favicon.png',
     titleBarStyle: 'hidden',
     autoHideMenuBar: true,
     enableRemoteModule: true,
@@ -25,7 +24,7 @@ function createWindow () {
     }
   })
 
-  // and load the index.html of the app.
+  //win.loadURL(`file://${__dirname}/index.html`);
   win.loadURL(config.url)
   //win.webContents.openDevTools()
 }
